@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    gap: 50px;
+    margin: 40px auto;
+}
+
+/* Phone mockup */
+.phone-mockup {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.screen {
+    width: 280px;
+    height: 500px;
+    border: 12px solid #111;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.screen-content {
+    padding: 20px;
+    color: white;
+}
+
+.mockup-text {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.mockup-post {
+    background: rgba(255, 255, 255, 0.2);
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Login panel */
+.login-panel {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.login-form {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #262626;
+}
+
+.logo i {
+    font-size: 40px;
+}
+
+.logo h1 {
+    font-family: 'Billabong', cursive;
+    font-weight: normal;
+    font-size: 45px;
+}
+
+@font-face {
+    font-family: 'Billabong';
+    src: url('https://fonts.cdnfonts.com/s/13949/Billabong.woff') format('woff');
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #a8a8a8;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #007acc;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.divider span {
+    padding: 0 15px;
+}
+
+.fb-login {
+    color: #385185;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.fb-login i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.forgot-link {
+    color: #00376b;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.signup-box {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.get-app {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.app-badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.app-badges img {
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    max-width: 900px;
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+footer nav a {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .phone-mockup {
+        display: none;
+    }
+    .container {
+        gap: 20px;
+    }
+}
