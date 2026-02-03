@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f8fa;
+    color: #24292f;
+    line-height: 1.5;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    color: white;
+    border-radius: 16px;
+    margin-bottom: 60px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #c9d1d9;
+}
+
+.cta-btn {
+    background-color: #238636;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cta-btn:hover {
+    background-color: #2ea043;
+}
+
+/* Pricing */
+.pricing {
+    margin-bottom: 80px;
+}
+
+.pricing h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.tiers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card.popular {
+    border-color: #0969da;
+    border-width: 2px;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0969da;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 20px 0;
+    color: #0d1117;
+}
+
+.price span {
+    font-size: 18px;
+    color: #57606a;
+    font-weight: normal;
+}
+
+.card p {
+    color: #57606a;
+    margin-bottom: 25px;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.card li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card li i {
+    color: #238636;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.card-btn {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    background: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card-btn.primary {
+    background-color: #0969da;
+    color: white;
+    border-color: #0969da;
+}
+
+.card-btn:hover {
+    background-color: #f6f8fa;
+}
+
+.card-btn.primary:hover {
+    background-color: #0a58ca;
+}
+
+/* Add-ons */
+.addons {
+    margin-bottom: 60px;
+}
+
+.addons h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.addons > p {
+    text-align: center;
+    color: #57606a;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.addon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.addon-card {
+    background: white;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 25px;
+    transition: all 0.2s;
+}
+
+.addon-card:hover {
+    border-color: #0969da;
+    box-shadow: 0 6px 18px rgba(9, 105, 218, 0.1);
+}
+
+.addon-card h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.addon-card h4 i {
+    color: #0969da;
+}
+
+.addon-card p {
+    color: #57606a;
+    margin-bottom: 15px;
+    min-height: 48px;
+}
+
+.addon-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0d1117;
+}
+
+.addon-price span {
+    font-size: 16px;
+    color: #57606a;
+    font-weight: normal;
+}
+
+/* Footer */
+.page-footer {
+    text-align: center;
+    padding: 30px;
+    color: #57606a;
+    border-top: 1px solid #d0d7de;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .tiers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .addon-grid {
+        grid-template-columns: 1fr;
+    }
+    body {
+        padding: 10px;
+    }
+}
